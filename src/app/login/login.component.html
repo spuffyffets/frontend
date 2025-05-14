@@ -1,0 +1,28 @@
+<div class="login-wrapper">
+  <div class="login-box">
+    <h2>Welcome Back</h2>
+    <p *ngIf="message" class="message">{{ message }}</p>
+
+    <form (ngSubmit)="handleSubmit()">
+      <input
+        type="email"
+        placeholder="Enter your email"
+        [(ngModel)]="formData.email"
+        name="email"
+        required
+      />
+      <input
+        type="password"
+        placeholder="Enter your password"
+        [(ngModel)]="formData.password"
+        name="password"
+        required
+      />
+
+      <button type="submit">Sign In</button>
+    </form>
+    <p class="register-link">
+      New here? <a routerLink="/register" routerLinkActive="router-link-active">Create Account</a>
+    </p>
+  </div>
+</div>

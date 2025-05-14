@@ -1,0 +1,24 @@
+<div class="dashboard-container">
+  <!-- Redesigned Sidebar -->
+  <aside class="custom-sidebar">
+    <div class="sidebar-header">MedTrack</div>
+    <ul class="menu-list">
+      <li *ngIf="isAuth()"><a routerLink="/dashboard"><i class="fas fa-tachometer-alt"></i> Dashboard</a></li>
+      <li *ngIf="isAuth()"><a routerLink="/transaction"><i class="fas fa-exchange-alt"></i> Transactions</a></li>
+      <li *ngIf="isAdmin()"><a routerLink="/category"><i class="fas fa-tags"></i> Category</a></li>
+      <li *ngIf="isAdmin()"><a routerLink="/product"><i class="fas fa-box-open"></i> Products</a></li>
+      <li *ngIf="isAdmin()"><a routerLink="/supplier"><i class="fas fa-truck"></i> Suppliers</a></li>
+      <li *ngIf="isAuth()"><a routerLink="/purchase"><i class="fas fa-shopping-cart"></i> Purchase</a></li>
+      <li *ngIf="isAuth()"><a routerLink="/sell"><i class="fas fa-cash-register"></i> Sell</a></li>
+      <li *ngIf="isAuth()"><a routerLink="/profile"><i class="fas fa-user"></i> Profile</a></li>
+      <li *ngIf="!isAuth()"><a routerLink="/login"><i class="fas fa-sign-in-alt"></i> Login</a></li>
+      <li *ngIf="!isAuth()"><a routerLink="/register"><i class="fas fa-user-plus"></i> Register</a></li>
+      <li *ngIf="isAuth()"><a (click)="logOut()"><i class="fas fa-sign-out-alt"></i> Logout</a></li>
+    </ul>
+  </aside>
+
+  <!-- Main Content -->
+  <main class="main-section">
+    <router-outlet></router-outlet>
+  </main>
+</div>

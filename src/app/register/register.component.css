@@ -1,0 +1,97 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background-color: #f2f6fc;
+  min-height: 30vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+/* Auth box */
+.auth-container {
+  background: #ffffff;
+  width: 100%;
+  max-width: 500px;
+  padding: 30px 40px;
+  margin: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading */
+.auth-container h2 {
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 25px;
+  color: #333;
+}
+
+/* Form layout */
+.auth-container form {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Input fields */
+.auth-container input {
+  margin-bottom: 15px;
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  transition: border-color 0.3s ease;
+}
+
+.auth-container input:focus {
+  border-color: #17a2b8;
+  outline: none;
+}
+
+/* Button styling */
+button[type="submit"] {
+  padding: 14px;
+  font-size: 16px;
+  font-weight: 600;
+  background-color: #0077cc;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #005fa3;
+}
+
+/* Error message */
+.error-message {
+  color: red;
+  text-align: center;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+/* Bottom text and link */
+.auth-container p {
+  text-align: center;
+  margin-top: 15px;
+  font-size: 15px;
+}
+
+.auth-container a {
+  color: #0077cc;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.auth-container a:hover {
+  text-decoration: underline;
+}

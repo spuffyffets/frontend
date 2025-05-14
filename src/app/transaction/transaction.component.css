@@ -1,0 +1,130 @@
+.transactions-page {
+    padding: 30px;
+    background-color: #f5f7fa;
+    font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: #3498db; /* Soft Blue for Titles */
+    text-align: left;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.transactions-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.transaction-search {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.search-input {
+    padding: 10px 15px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    width: 250px;
+    transition: all 0.3s ease;
+}
+
+.search-input:focus {
+    border-color: #3498db;
+    box-shadow: 0 4px 6px rgba(52, 152, 219, 0.3);
+}
+
+.btn-search {
+    padding: 12px 20px;
+    background-color: #3498db;
+    border: none;
+    border-radius: 6px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-search:hover {
+    background-color: #2980b9;
+}
+
+.transactions-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 30px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.transactions-table th,
+.transactions-table td {
+    padding: 15px;
+    text-align: left;
+    border: 1px solid #ddd;
+    font-size: 16px;
+}
+
+.transactions-table th {
+    background-color: #f2f2f2;
+    color: #34495e;
+    font-weight: 600;
+}
+
+.transactions-table td {
+    background-color: #ffffff;
+    color: #7f8c8d;
+}
+
+.transactions-table tr:nth-child(even) td {
+    background-color: #ecf0f1;
+}
+
+.transactions-table tr:hover td {
+    background-color: #f1c40f; /* Gold color for hover effect */
+    color: #fff;
+}
+
+.transactions-table td button {
+    padding: 8px 20px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.transactions-table td button:hover {
+    background-color: #2980b9;
+}
+
+@media (max-width: 768px) {
+    .transactions-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .transaction-search {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .search-input {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .btn-search {
+        width: 100%;
+    }
+
+    .transactions-table th,
+    .transactions-table td {
+        padding: 12px;
+    }
+}

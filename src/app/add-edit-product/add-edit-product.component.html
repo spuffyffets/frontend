@@ -1,0 +1,40 @@
+<div class="product-form-page">
+  <p *ngIf="message" class="message">{{message}}</p>
+  <h1>{{isEditing ? 'Edit Product' : 'Add Product'}}</h1>
+  <form (submit)="handleSubmit($event)">
+    <div class="form-group">
+      <label for="name">Product Name</label>
+      <input type="text" [(ngModel)]="name" name="name" id="name" placeholder="Enter product name" title="Enter the name of the product" required>
+    </div>
+
+    <div class="form-group">
+      <label for="sku">Sku</label>
+      <input type="text" [(ngModel)]="sku" name="sku" id="sku" placeholder="Enter SKU" title="Enter the product SKU" required>
+    </div>
+
+    <div class="form-group">
+      <label for="stockQuantity">Stock Quantity</label>
+      <input type="number" [(ngModel)]="stockQuantity" name="stockQuantity" id="stockQuantity" placeholder="Enter stock quantity" title="Enter the quantity of products in stock" required>
+    </div>
+
+    <div class="form-group">
+      <label for="price">Price</label>
+      <input type="number" [(ngModel)]="price" name="price" id="price" placeholder="Enter price" title="Enter the price of the product" required>
+    </div>
+
+    <div class="form-group">
+      <label for="description">Description</label>
+      <textarea [(ngModel)]="description" name="description" id="description" placeholder="Enter product description" title="Enter a brief description of the product" required></textarea>
+    </div>
+
+    <div class="form-group">
+      <label for="categoryId">Category</label>
+      <select [(ngModel)]="categoryId" name="categoryId" id="categoryId" required>
+        <option value="">Select a category</option>
+        <option *ngFor="let category of categories" [value]="category.id">{{category.name}}</option>
+      </select>
+    </div>
+
+    <button type="submit" [disabled]="loading">{{isEditing ? 'Edit Product' : 'Add Product'}}</button>
+  </form>
+</div>

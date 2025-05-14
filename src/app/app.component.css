@@ -1,0 +1,84 @@
+/* Layout */
+.dashboard-container {
+  display: flex;
+  height: 100vh;
+  background: #f5f7fa;
+}
+
+/* Sidebar */
+.custom-sidebar {
+  width: 250px;
+  background: #ffffff;
+  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+  padding: 30px 20px;
+  position: fixed;
+  height: 100vh;
+  overflow-y: auto;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Logo/Header */
+.sidebar-header {
+  font-size: 28px;
+  font-weight: 800;
+  color: #008080;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+/* Menu List */
+.menu-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu-list li {
+  margin: 20px 0;
+}
+
+/* Links */
+.menu-list a {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: #333;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 16px;
+  padding: 12px 15px;
+  border-radius: 12px;
+  transition: all 0.3s ease-in-out;
+  background: transparent;
+}
+
+.menu-list a:hover {
+  background-color: #008080;
+  color: #fff;
+  transform: translateX(5px);
+}
+
+/* Active style (optional if using routerLinkActive) */
+.menu-list a.active {
+  background-color: #008080;
+  color: #fff;
+}
+
+/* Main Content */
+.main-section {
+  margin-left: 250px;
+  padding: 30px;
+  flex-grow: 1;
+  overflow-y: auto;
+  transition: margin-left 0.3s ease;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+  .custom-sidebar {
+    width: 200px;
+  }
+  .main-section {
+    margin-left: 200px;
+  }
+}
