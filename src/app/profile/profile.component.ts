@@ -10,6 +10,7 @@ import { ApiService } from '../service/api.service';
   styleUrl: './profile.component.css'
 })
 export class ProfileComponent implements OnInit {
+userInfoItems: any;
   constructor(private apiService: ApiService){}
   user: any = null
   message: string = "";

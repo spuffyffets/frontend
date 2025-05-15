@@ -32,7 +32,8 @@
         <tr *ngFor="let transaction of transactions">
           <td>{{ transaction.transactionType }}</td>
           <td>{{ transaction.status }}</td>
-          <td>{{ transaction.totalPrice | currency }}</td>
+          <td>{{ transaction.totalPrice | currency:'INR':'symbol'}}</td>
+          
           <td>{{ transaction.totalProducts }}</td>
           <td>{{ transaction.createdAt | date: 'short' }}</td>
           <td (click)="navigateTOTransactionsDetailsPage(transaction.id)">

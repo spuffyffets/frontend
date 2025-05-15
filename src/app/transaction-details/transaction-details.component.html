@@ -9,7 +9,7 @@
             <p>Status: {{transaction.status}}</p>
             <p>Description: {{transaction.description}}</p>
             <p>Total Products: {{transaction.totalProducts}}</p>
-            <p>Total Price: {{transaction.totalPrice | currency}}</p>
+            <p>Total Price: {{transaction.totalPrice | currency:'INR':'symbol'}}</p>
             <p>Created At: {{transaction.createdAt | date:'short'}}</p>
 
             <div *ngIf="transaction.updatedAt">
@@ -22,7 +22,7 @@
             <h2>Product Information</h2>
             <p>Name: {{transaction.product.name}}</p>
             <p>SKU: {{transaction.product.sku}}</p>
-            <p>Price: {{transaction.product.price | currency}}</p>
+            <p>Price: {{transaction.product.price | currency:'INR':'symbol'}}</p>
             <p>Stock Quantity: {{transaction.product.stockQuantity}}</p>
             <p>Description: {{transaction.product.description}}</p>
 
@@ -50,8 +50,8 @@
 
          <!-- UPDATE TRANSACTION -->
          <div class="section-card transaction-staus-update">
-            <label for="">Status: </label>
-            <select [(ngModel)]="status" id="">
+            <label for="status-select">Status: </label>
+            <select [(ngModel)]="status" id="status-select">
                 <option value="PENDING">PENDING</option>
                 <option value="PROCESSING">PROCESSING</option>
                 <option value="COMPLETED">COMPLETED</option>

@@ -16,7 +16,8 @@
       <div class="product-info">
         <h3 class="name">{{ product.name }}</h3>
         <p class="sku">Sku: {{ product.sku }}</p>
-        <p class="price">Price: {{ product.price | currency }}</p>
+        <p class="price">Price: {{ product.price | currency:'INR':'symbol' }}</p>
+
         <p class="stock-quantity">Stock Quantity: {{ product.stockQuantity }}</p>
         <p class="description">Description: {{ product.description }}</p>
       </div>
