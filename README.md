@@ -92,11 +92,12 @@ ng serve --open
 🖥️ Backend Setup (Spring Boot)
 To enable API functionality:
 
-
+```bash
 git clone https://github.com/spuffyffets/Inventory-Management-System.git
 cd Inventory-Management-System
-# Open in IDE (Eclipse/IntelliJ/VSCode)
-# Configure DB (MySQL) and run Spring Boot app
+```
+- Open in IDE (Eclipse/IntelliJ/VSCode)
+- Configure DB (MySQL) and run Spring Boot app
 
 
 ## ✅ Make sure:
@@ -108,7 +109,6 @@ Database inventory_db01 is created
 Spring Boot app runs on: http://localhost:5050/ (Check Port no:- in application.properties)
 
 
-c003
 ## ✍️ Author
 
 Suchit Chaudhari
