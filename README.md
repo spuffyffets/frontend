@@ -105,10 +105,10 @@ MySQL is running
 
 Database inventory_db01 is created
 
-Spring Boot app runs on: http://localhost:5050/(Check Port no:- in application.properties)
+Spring Boot app runs on: http://localhost:5050/ (Check Port no:- in application.properties)
 
 
-
+c003
 ## ✍️ Author
 
 Suchit Chaudhari
