@@ -76,17 +76,18 @@ npm install -g @angular/cli
 
 
 ## Installation (Frontend)
-
+```bash
 git clone https://github.com/spuffyffets/frontend.git
 cd frontend
 npm install
 ng serve --open
+```
 
-# 🚀 App will run at: http://localhost:4200/
+ 🚀 App will run at: http://localhost:4200/
 
-# ⚠️ Ensure the backend is running on: http://localhost:8080/
+ ⚠️ Ensure the backend is running on: http://localhost:8080/
 
-# ✅ Make sure CORS is enabled on backend
+ ✅ Make sure CORS is enabled on backend
 
 🖥️ Backend Setup (Spring Boot)
 To enable API functionality:
