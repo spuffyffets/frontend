@@ -2,7 +2,10 @@
 
 MedTrack is a web-based inventory management system designed for medical suppliers and pharmacies. It allows users to register with role-based access (Admin/Manager), manage transactions, categories, products, suppliers, and view insightful dashboards.
 
-![Dashboard Preview](D:\Full_Stack_Projects\FrontEnd\IMS-angular-master\frontend\src\app\assets\images\dashboard.png)
+## 📸 Screenshot
+
+![Dashboard Preview](src/app/assets/images/dashboard.png)
+
 
 ---
 
