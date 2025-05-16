@@ -40,8 +40,7 @@
 > ⚙️ The **backend** (Spring Boot) is hosted in a separate repository.
 
 ## 📁 Project Structure (Frontend Only)
-
-```bash
+c1
 frontend/
  ├── src/
  │   ├── app/
