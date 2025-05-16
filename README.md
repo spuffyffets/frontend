@@ -85,7 +85,7 @@ ng serve --open
 
  🚀 App will run at: http://localhost:4200/
 
- ⚠️ Ensure the backend is running on: http://localhost:8080/
+ ⚠️ Ensure the backend is running on: http://localhost:5050/  (Check Port no:- in application.properties)
 
  ✅ Make sure CORS is enabled on backend
 
