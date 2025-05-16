@@ -61,8 +61,9 @@ frontend/
 
 
 
+--- 
 
- 🔧 Setup Instructions
+ ## 🔧 Setup Instructions
 ✅ Prerequisites
 🟢 Node.js & npm installed
 
