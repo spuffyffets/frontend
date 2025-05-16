@@ -40,7 +40,8 @@
 > ⚙️ The **backend** (Spring Boot) is hosted in a separate repository.
 
 ## 📁 Project Structure (Frontend Only)
-c1
+
+```bash
 frontend/
  ├── src/
  │   ├── app/
@@ -58,60 +59,56 @@ frontend/
  ├── package.json
  └── README.md
 
-
+``` 
 
 --- 
 
- ## 🔧 Setup Instructions
-✅ Prerequisites
-🟢 Node.js & npm installed
+## 🔧 Setup Instructions
 
-🟢 Angular CLI installed:
+### ✅ Prerequisites
+- 🟢 Node.js & npm installed  
+- 🟢 Angular CLI installed:
 
-bash
-Copy
-Edit
+```bash
 npm install -g @angular/cli
-🟢 Backend API must be running
-🔗 See Backend Repo
+
+```
 
 
+## Installation (Frontend)
 
-
-🛠️ Installation (Frontend)
-bash
-Copy
-Edit
 git clone https://github.com/spuffyffets/frontend.git
 cd frontend
 npm install
 ng serve --open
-🚀 App will run at: http://localhost:4200/
 
-⚠️ Ensure the backend is running on: http://localhost:8080/
+# 🚀 App will run at: http://localhost:4200/
 
-✅ Make sure CORS is enabled on backend
+# ⚠️ Ensure the backend is running on: http://localhost:8080/
+
+# ✅ Make sure CORS is enabled on backend
 
 🖥️ Backend Setup (Spring Boot)
 To enable API functionality:
 
-bash
-Copy
-Edit
+
 git clone https://github.com/spuffyffets/Inventory-Management-System.git
 cd Inventory-Management-System
 # Open in IDE (Eclipse/IntelliJ/VSCode)
 # Configure DB (MySQL) and run Spring Boot app
-✅ Make sure:
+
+
+## ✅ Make sure:
 
 MySQL is running
 
 Database inventory_db01 is created
 
-Spring Boot app runs on: http://localhost:8080/
+Spring Boot app runs on: http://localhost:5050/(Check Port no:- in application.properties)
 
 
 
-✍️ Author
+## ✍️ Author
+
 Suchit Chaudhari
 📧 suchitchaudhari17@gmail.com
