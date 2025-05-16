@@ -1,11 +1,11 @@
-# MedTrack – Medical Inventory Management System
+# 💊 MedTrack – Medical Inventory Management System (Frontend)
 
-MedTrack is a web-based inventory management system designed for medical suppliers and pharmacies. It allows users to register with role-based access (Admin/Manager), manage transactions, categories, products, suppliers, and view insightful dashboards.
+**MedTrack** is a full-stack role-based Medical Inventory Management System that enables product, supplier, and transaction management for clinics and pharmacies. This repository contains the **Angular frontend**.
 
-## 📸 Screenshot
+> 🔗 **Backend Repo**: [Inventory-Management-System (Spring Boot)](https://github.com/spuffyffets/Inventory-Management-System.git)  
+> 🔗 **Frontend Repo**: [frontend (Angular)](https://github.com/spuffyffets/frontend.git)
 
 ![Dashboard Preview](src/app/assets/images/dashboard.png)
-
 
 ---
 
@@ -26,9 +26,9 @@ MedTrack is a web-based inventory management system designed for medical supplie
 
 ## 🧑‍💻 Technologies Used
 
-- **Backend**: Spring Boot, Hibernate, MySQL (TiDB Cloud compatible)
 - **Frontend**: Angular
-- **Charting**: Chart.js or Recharts
+- **Backend**: Spring Boot, Hibernate
+- **Charting**: Chart.js or Recharts, ngx-charts
 - **Security**: JWT Authentication
 - **Database**: MySQL (`inventory_db01`)
 
@@ -36,3 +36,82 @@ MedTrack is a web-based inventory management system designed for medical supplie
 
 ## 📂 Project Structure
 
+> 🔁 This repository contains only the **frontend** (Angular) application.  
+> ⚙️ The **backend** (Spring Boot) is hosted in a separate repository.
+
+## 📁 Project Structure (Frontend Only)
+
+```bash
+frontend/
+ ├── src/
+ │   ├── app/
+ │   │   ├── auth/          # Login, Register, JWT guards
+ │   │   ├── dashboard/     # Analytics Dashboard
+ │   │   ├── category/      # Category CRUD
+ │   │   ├── products/      # Product CRUD
+ │   │   ├── suppliers/     # Supplier CRUD
+ │   │   ├── purchase/      # Purchase Transactions
+ │   │   ├── sell/          # Sales Transactions
+ │   │   ├── profile/       # User Profile
+ │   │   ├── shared/        # Navbar, Sidebar, etc.
+ │   │   └── app.module.ts
+ ├── angular.json
+ ├── package.json
+ └── README.md
+
+
+
+
+ 🔧 Setup Instructions
+✅ Prerequisites
+🟢 Node.js & npm installed
+
+🟢 Angular CLI installed:
+
+bash
+Copy
+Edit
+npm install -g @angular/cli
+🟢 Backend API must be running
+🔗 See Backend Repo
+
+
+
+
+🛠️ Installation (Frontend)
+bash
+Copy
+Edit
+git clone https://github.com/spuffyffets/frontend.git
+cd frontend
+npm install
+ng serve --open
+🚀 App will run at: http://localhost:4200/
+
+⚠️ Ensure the backend is running on: http://localhost:8080/
+
+✅ Make sure CORS is enabled on backend
+
+🖥️ Backend Setup (Spring Boot)
+To enable API functionality:
+
+bash
+Copy
+Edit
+git clone https://github.com/spuffyffets/Inventory-Management-System.git
+cd Inventory-Management-System
+# Open in IDE (Eclipse/IntelliJ/VSCode)
+# Configure DB (MySQL) and run Spring Boot app
+✅ Make sure:
+
+MySQL is running
+
+Database inventory_db01 is created
+
+Spring Boot app runs on: http://localhost:8080/
+
+
+
+✍️ Author
+Suchit Chaudhari
+📧 suchitchaudhari17@gmail.com
