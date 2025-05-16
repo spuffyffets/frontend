@@ -20,7 +20,8 @@ export class RegisterComponent {
     email: '',
     name: '',
     phoneNumber: '',
-    password: ''
+    password: '',
+    role: ''
   };
   message:string | null = null;
 
@@ -29,7 +30,8 @@ export class RegisterComponent {
       !this.formData.email || 
       !this.formData.name || 
       !this.formData.phoneNumber || 
-      !this.formData.password 
+      !this.formData.password ||
+      !this.formData.role
     ){
       this.showMessage("All fields are required");
       return;

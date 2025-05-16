@@ -85,7 +85,7 @@ h1 {
 }
 
 .transactions-table tr:hover td {
-    background-color: #f1c40f; /* Gold color for hover effect */
+    background-color: #f1c40f; 
     color: #fff;
 }
 

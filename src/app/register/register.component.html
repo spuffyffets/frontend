@@ -33,6 +33,15 @@
       required
     />
 
+<label for="role">Select Role</label>
+<select id="role" name="role" [(ngModel)]="formData.role">
+  <option value="">-- Select Role --</option>
+  <option value="MANAGER">Manager</option>
+  <option value="ADMIN">Admin</option>
+</select>
+
+
+
     <button type="submit">Register</button>
   </form>
 

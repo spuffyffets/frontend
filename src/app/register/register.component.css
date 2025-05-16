@@ -95,3 +95,27 @@ button[type="submit"]:hover {
 .auth-container a:hover {
   text-decoration: underline;
 }
+
+/* Label styling */
+.auth-container label {
+  margin-bottom: 6px;
+  font-size: 16px;
+  color: #333;
+  font-weight: 500;
+}
+
+/* Select (dropdown) styling */
+.auth-container select {
+  margin-bottom: 15px;
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  background-color: #fff;
+  transition: border-color 0.3s ease;
+}
+
+.auth-container select:focus {
+  border-color: #17a2b8;
+  outline: none;
+}
