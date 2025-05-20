@@ -19,7 +19,7 @@
   min-width: 44px;
   text-align: center;
 
-  -webkit-user-select: none; /* Safari, iOS */
+  -webkit-user-select: none; /* Safari, iOS  sathi */
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
@@ -33,7 +33,7 @@
 }
 
 .pagination-button.active {
-  background: #ff6a00; /* vibrant orange accent */
+  background: #ff6a00; 
   box-shadow: 0 0 12px #ff6a00aa;
   font-weight: 700;
   cursor: default;

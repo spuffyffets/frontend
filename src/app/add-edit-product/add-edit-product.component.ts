@@ -74,8 +74,8 @@ expiryDate: any;
           this.stockQuantity = product.stockQuantity;
           this.categoryId = product.categoryId;
           this.description = product.description;
-          this.mgfDate = product.mgfDate;  // ✅ add this
-          this.expiryDate = product.expiryDate;  // ✅ add this
+          this.mgfDate = product.mgfDate;  
+          this.expiryDate = product.expiryDate; 
         } else {
           this.showMessage(res.message);
         }
