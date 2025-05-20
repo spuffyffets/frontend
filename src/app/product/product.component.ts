@@ -12,6 +12,7 @@ import { Router } from '@angular/router';
   styleUrl: './product.component.css',
 })
 export class ProductComponent implements OnInit {
+Date: any;
   constructor(private apiService: ApiService, private router: Router) {}
 
   products: any[] = [];

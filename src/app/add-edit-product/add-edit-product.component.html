@@ -23,6 +23,17 @@
     </div>
 
     <div class="form-group">
+  <label for="mgfDate">Manufacturing Date</label>
+  <input type="date" [(ngModel)]="mgfDate" name="mgfDate" id="mgfDate" title="Enter the manufacturing date" required>
+</div>
+
+<div class="form-group">
+  <label for="expiryDate">Expiry Date</label>
+  <input type="date" [(ngModel)]="expiryDate" name="expiryDate" id="expiryDate" title="Enter the expiry date" required>
+</div>
+
+
+    <div class="form-group">
       <label for="description">Description</label>
       <textarea [(ngModel)]="description" name="description" id="description" placeholder="Enter product description" title="Enter a brief description of the product" required></textarea>
     </div>

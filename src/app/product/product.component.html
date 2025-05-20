@@ -20,6 +20,17 @@
 
         <p class="stock-quantity">Stock Quantity: {{ product.stockQuantity }}</p>
         <p class="description">Description: {{ product.description }}</p>
+        
+        
+       <p class="mfg-date">Mfg Date: {{ product.mgfDate | date:'mediumDate' }}</p>
+<p class="expire-date">Expiry Date: {{ product.expiryDate | date:'mediumDate' }}</p>
+
+
+
+
+
+
+
       </div>
 
       <!-- PRODUCT ACTIONS -->

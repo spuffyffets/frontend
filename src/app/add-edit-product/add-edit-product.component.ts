@@ -17,6 +17,8 @@ interface Category {
   styleUrls: ['./add-edit-product.component.css'],
 })
 export class AddEditProductComponent implements OnInit {
+mgfDate: any;
+expiryDate: any;
   constructor(
     private apiService: ApiService,
     private route: ActivatedRoute,
@@ -72,6 +74,8 @@ export class AddEditProductComponent implements OnInit {
           this.stockQuantity = product.stockQuantity;
           this.categoryId = product.categoryId;
           this.description = product.description;
+          this.mgfDate = product.mgfDate;  // ✅ add this
+          this.expiryDate = product.expiryDate;  // ✅ add this
         } else {
           this.showMessage(res.message);
         }
@@ -95,6 +99,8 @@ export class AddEditProductComponent implements OnInit {
       stockQuantity: this.stockQuantity,
       categoryId: this.categoryId,
       description: this.description,
+      mgfDate: this.mgfDate,
+  expiryDate: this.expiryDate,
       productId: this.productId || undefined, // Include productId if editing
     };
 

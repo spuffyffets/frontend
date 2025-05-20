@@ -45,7 +45,7 @@
 .product-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 80px;
+  gap: 60px;
   justify-content: center;
 }
 
@@ -80,7 +80,9 @@
 .product-info .sku,
 .product-info .price,
 .product-info .stock-quantity,
-.product-info .description {
+.product-info .description,
+.product-info .mfg-date,
+.product-info .expire-date {
   font-size: 0.95rem;
   color: #636e72;
   margin-bottom: 8px;
