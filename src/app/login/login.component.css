@@ -91,3 +91,63 @@ button[type="submit"]:hover {
 .register-link a:hover {
   text-decoration: underline;
 }
+
+/* --- Additional Mobile Tweaks for Login Page --- */
+@media (max-width: 768px) {
+
+  /* Make page layout vertical; center everything */
+  body {
+    justify-content: flex-start;
+    align-items: flex-start;
+    min-height: 100vh;
+    padding-top: 40px;
+  }
+
+  .login-wrapper {
+    margin-top: 20px;
+  }
+
+  .login-box {
+    margin-top: 20px;
+    width: 90%;
+    max-width: 380px;
+    padding: 20px;
+  }
+
+  .login-box h2 {
+    font-size: 22px;
+  }
+
+  .login-box input {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  button[type="submit"] {
+    font-size: 15px;
+    padding: 12px;
+  }
+
+  .register-link {
+    margin-top: 15px;
+    font-size: 14px;
+  }
+}
+
+/* Very small screens (phones 360px and below) */
+@media (max-width: 400px) {
+
+  .login-box {
+    width: 95%;
+    padding: 15px;
+  }
+
+  .login-box h2 {
+    font-size: 20px;
+  }
+
+  button[type="submit"] {
+    padding: 10px;
+  }
+}
+

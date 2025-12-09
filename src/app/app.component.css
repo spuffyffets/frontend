@@ -73,12 +73,39 @@
   transition: margin-left 0.3s ease;
 }
 
-/* Responsive */
+/* --- Mobile Responsive Sidebar --- */
 @media screen and (max-width: 768px) {
+
+  /* Hide sidebar by default */
   .custom-sidebar {
-    width: 200px;
+    position: fixed;
+    left: -250px;   /* moves sidebar out of screen */
+    width: 220px;
+    transition: all 0.3s ease-in-out;
+    z-index: 999;   /* keep sidebar above content when opened */
   }
+
+  /* When sidebar is toggled open (you will add a class in TS later) */
+  .custom-sidebar.active {
+    left: 0;
+  }
+
+  /* Main content takes full width */
   .main-section {
-    margin-left: 200px;
+    margin-left: 0;
+    padding: 20px;
+  }
+
+  /* Sidebar header smaller on mobile */
+  .sidebar-header {
+    font-size: 22px;
+    margin-bottom: 25px;
+  }
+
+  /* Menu items spacing adjustments */
+  .menu-list a {
+    font-size: 14px;
+    padding: 10px 12px;
+    gap: 8px;
   }
 }
